@@ -1,4 +1,3 @@
-// utils_test.go
 
 package gohelpers
 
@@ -260,7 +259,6 @@ func TestContains(t *testing.T) {
     }
 }
 
-// Add these to utils_test.go
 
 func TestSum(t *testing.T) {
     tests := []struct {
@@ -322,7 +320,6 @@ func TestShuffle(t *testing.T) {
         t.Errorf("Shuffle() returned slice of length %v, want %v", len(result), len(original))
     }
 
-    // Check all elements are present (just in different order)
     originalMap := make(map[int]bool)
     resultMap := make(map[int]bool)
     for _, v := range original {
