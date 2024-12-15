@@ -4,6 +4,10 @@ Utility Functions for Go.
 
 ### Example
 
+```bash
+go get github.com/johnwroge/go_helpers
+```
+
 ```Go
 
 package main
