@@ -1,10 +1,11 @@
-
 package gohelpers
 
 import (
+    "fmt"
     "math"
-    "sort"
+    "math/rand"
     "strings"
+    "time"
 )
 
 // Min returns the smallest of two integers
@@ -115,7 +116,7 @@ func Shuffle[T any](slice []T) []T {
 
 // Chunk splits a slice into chunks of specified size
 func Chunk[T any](slice []T, size int) [][]T {
-    if size <= 0 {
+    if size <= 0 || len(slice) == 0 {
         return [][]T{}
     }
     
@@ -124,7 +125,10 @@ func Chunk[T any](slice []T, size int) [][]T {
     for size < len(slice) {
         slice, chunks = slice[size:], append(chunks, slice[0:size:size])
     }
-    chunks = append(chunks, slice)
+    
+    if len(slice) > 0 {
+        chunks = append(chunks, slice)
+    }
     return chunks
 }
 
