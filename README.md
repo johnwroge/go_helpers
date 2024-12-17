@@ -5,13 +5,13 @@ A collection of utility functions for Go, inspired by convenient helpers found i
 ## Installation
 
 ```bash
-go get github.com/yourusername/go_helpers
+go get github.com/johnwroge/go_helpers
 ```
 
 ## Usage
 
 ```go
-import "github.com/yourusername/go_helpers"
+import "github.com/johnwroge/go_helpers"
 ```
 
 ## Available Functions
